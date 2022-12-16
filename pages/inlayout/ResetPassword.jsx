@@ -1,9 +1,9 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 export default function ResetPassword() {
     return (
         <Layout>
-            <body className="antialiased bg-slate-200 h-full w-full justify-center items-center flex rounded-3xl">
+            <div className="antialiased bg-zinc-800 h-full w-full justify-center items-center flex rounded-3xl">
                 <div className="max-w-lg mx-min my-10 bg-white p-8 rounded-xl shadow shadow-slate-300">
                     <h1 className="text-4xl font-medium">Reset password</h1>
                     <p className="text-slate-500">Fill up the form  to reset the password</p>
@@ -31,7 +31,7 @@ export default function ResetPassword() {
                         </div>
                     </form>
                 </div>
-            </body>
+            </div>
         </Layout>
     )
 }
