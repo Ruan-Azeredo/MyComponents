@@ -3,12 +3,6 @@ import styles from '../../styles/DarkModeToggle.module.css'
 
 export default function DarkModeToggle() {
 
-    useEffect(() => {
-        if (localStorage.getItem("dark")) {
-            document.body.classList.add("dark")
-        }
-    }, [])
-    
     const handleToggled = () => {
         document.body.classList.toggle("dark")
         localStorage.setItem(
@@ -16,6 +10,12 @@ export default function DarkModeToggle() {
             document.body.className
         )
     }
+
+    useEffect(() => {
+        if (localStorage.getItem("dark")) {
+            document.body.classList.add("dark")
+        }
+    }, [])
 
     return (
         <div className='div-toggle'>
