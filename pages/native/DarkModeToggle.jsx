@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import styles from '../../styles/DarkModeToggle.module.css'
 
 export default function DarkModeToggle() {
 
