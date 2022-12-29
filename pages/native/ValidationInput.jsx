@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ValidationInput = () => {
+export default function ValidationInput(){
 
     const [inputClass, useInputClass] = useState(null)
 
@@ -91,5 +91,3 @@ const ValidationInput = () => {
         </div>
   )
 }
-
-export default ValidationInput
