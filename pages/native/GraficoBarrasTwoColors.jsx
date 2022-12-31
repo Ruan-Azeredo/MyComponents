@@ -151,6 +151,12 @@ const GraficoBarrasTwoColors = () => {
                 font-size: 16px;
                 font-weight: 500
             }
+
+            @media (max-width: 700px){
+                .card{
+                    width: 350px
+                }
+            }
             `}</style>
       </div>
   )
