@@ -27,6 +27,7 @@ const Mary = () => {
     
     return (
         <div className='background'>
+            <div className='warning'>Por favor abra no computador</div>
             <input type="text" placeholder='Insira a Senha' onChange={() => getPassword()} />
             <div className={hidden}>
                 <div className='photo'>
@@ -106,6 +107,15 @@ const Mary = () => {
 
                 p{
                     margin-bottom: 200px
+                }
+                .warning{
+                    display: none;
+                    color: white
+                }
+                @media (max-width: 800px){
+                    .warning{
+                        display: flex
+                    }
                 }
             `}</style>
         </div>
