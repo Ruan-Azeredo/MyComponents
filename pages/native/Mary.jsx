@@ -103,6 +103,10 @@ const Mary = () => {
                     border-radius: 6px;
                     margin: 0 auto 30px auto;
                 }
+
+                p{
+                    margin-bottom: 200px
+                }
             `}</style>
         </div>
     )
